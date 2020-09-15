@@ -1,0 +1,157 @@
+\documentclass[11pt]{beamer}
+\usepackage{listings} % Include the listings-package
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amssymb, amsfonts, latexsym, cancel}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{epstopdf}
+\usepackage{subfigure}
+\usepackage{hyperref}
+%\usepackage{authblk}
+\usepackage{blindtext}
+\usepackage{booktabs} % Allows the use of \toprule, 
+\usepackage{filecontents}
+\usepackage{courier} %% Sets font for listing as Courier.
+\usepackage{listings}
+%\usepackage{listings, xcolor}
+\lstset{
+tabsize = 2, %% set tab space width
+showstringspaces = false, %% prevent space marking in strings, string is defined as the text that is generally printed directly to the console
+numbers = left, %% display line numbers on the left
+commentstyle = \color{green}, %% set comment color
+keywordstyle = \color{blue}, %% set keyword color
+stringstyle = \color{red}, %% set string color
+rulecolor = \color{black}, %% set frame color to avoid being affected by text color
+basicstyle = \small \ttfamily , %% set listing font and size
+breaklines = true, %% enable line breaking
+numberstyle = \tiny,
+}
+\usepackage{caption}
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox{gray}{\parbox{\textwidth}{#1#2#3}}}
+\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white}
+\definecolor{urlColor}{rgb}{0.06, 0.3, 0.57}
+\definecolor{linkColor}{rgb}{0.57, 0.0, 0.04}
+\definecolor{fileColor}{rgb}{0.0, 0.26, 0.26}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=linkColor,
+    filecolor=fileColor,      
+    urlcolor=urlColor,
+}
+\urlstyle{same}
+\setbeamercovered{transparent}
+%\usetheme{Boadilla}
+\usetheme{CambridgeUS}
+%\usetheme{Berkeley}
+%\usetheme{Warsaw}
+%\usetheme{Madrid}
+
+\title[Presentación]{\bf\Huge Interacción Humano Computador}
+%\subtitle{Presentación}
+\author[mmendozarod]
+{
+Fátima Gigi Rojas Carhuas\\
+Marco Antonio Mendoza Rodríguez\\
+Luis Fernando Quispe Sanomamani
+}
+\institute[UNSA]
+{
+\inst{1}% 
+Escuela profesional de ingeniería de Sistemas\\
+%Facutad de Producción y Servicios\\
+Universidad Nacional de San Agustín
+}
+\date[2020-15-08]{\scriptsize{2020-15-08}}
+%\logo{\includegraphics[width=3.0cm]{img/logo_unsa.jpg}}
+\titlegraphic{\includegraphics[width=3.0cm]{img/logo_unsa.jpg}}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Contenido}
+\tableofcontents
+\end{frame}
+
+\section{Brown}
+\begin{frame}
+\frametitle{Brown}
+\begin{itemize}
+\item ¿Quién fue Brown?
+\item Brown  escribió un libro de pautas de diseño titulado 'HumanComputer Interface Design Guidelines'.
+
+\item C. Marlin "Lin" Brown trabaja con tecnologías emergentes en Xerox Palo Alto Research Center. Obtuvo su Ph.D. del Instituto de Tecnología de Georgia en psicología de ingeniería de factores humanos, y ha enseñado en gestión de sistemas y factores humanos.
+\end{itemize}
+\end{frame}
+
+
+\section{Brown (1988)}
+\begin{frame}
+\frametitle{Brown (1988)HumanComputer Interface Design Guidelines}
+Es un conjunto de sugerencias prácticas y pautas para ayudar a los diseñadores de la interfaz entre los sistemas informáticos y sus usuarios. Estas pautas se extraen de diversas fuentes, que incluyen:
+
+\begin{itemize}
+\item Evidencia de experimentos.
+\item Predicciones de las teorías del desempeño humano
+\item Principios de la psicología cognitiva
+\item Principios de diseño ergonómico
+\item Evidencia recopilada a través de la experiencia en ingeniería.
+\end{itemize}
+Estas pautas se han desarrollado a partir del juicio de expertos, el sentido común y la experiencia práctica.
+\end{frame}
+\begin{frame}
+\frametitle{Brown (1988)}
+La aplicación de las directrices de diseño proporciona un enfoque sistemático para:
+
+\begin{itemize}
+\item Aprovechar la experiencia práctica.
+\item Difundir e incorporar los resultados experimentales aplicables
+\item Incorporar reglas generales 
+\item Promover la coherencia entre los diseñadores responsables de las diferentes partes de la interfaz de usuario del sistema.
+
+\end{itemize}
+En algunas situaciones de diseño, algunas pautas pueden ser inaplicables o imprácticas debido a restricciones de hardware, software o costos. En otros casos, las restricciones pueden permitir al diseñador observar una pauta solo a costa de violar otra. Esto requiere compensaciones y juicios de prioridad. En otros casos, una pauta que es importante en ciertos tipos de diálogos o aplicaciones puede ser trivial o incluso contraproducente en otros 
+\end{frame}
+
+
+\section{Libros}
+\begin{frame}
+\frametitle{Libros}
+
+{\includegraphics[width=5.0cm]{img/Johnson.png}}
+{\includegraphics[width=5.0cm]{img/brown.png}}
+
+\end{frame}
+
+
+\section{GUI}
+\begin{frame}
+\frametitle{ Brown y La interfaz gráfica de usuario}
+\begin{itemize}
+\item Los autores al referirse a las pautas de diseño tomaban como antecedentes a la psicología humana para aplicarlo al diseño de sistemas informáticos , hoy en día las reglas de diseño de interfaces graficas se basan en la psicologia humana como acciones ,pensamientos ,etc .
+\item Brown y otros autores como Shneiderman, Nielsen y Molich ;  utilizaron el conocimiento perceptual y cognitivo psicologico para intentar mejorar el diseño de sistemas interactivos utilizables y útiles , buscaban diseñar una interfaz  que  pueda disminuir o eliminar el impacto de los errores cognitivos que las personas cometen a menudo .
+
+\end{itemize}
+\end{frame}
+
+
+\section{Referencias}
+%References frame
+\begin{frame}
+\frametitle{Referencias}
+\begin{itemize}
+\item \href{https://es.wikipedia.org/wiki/Alan_Kay}{Alan Kay}
+\item \href{https://es.wikipedia.org/wiki/Pirates_of_Silicon_Valley}{Piratas de Silicon Valley - Película}
+\item \href{https://www.amazon.com/-/es/Walter-Isaacson/dp/1451648537}{Steve Jobs - Autobiografía}
+\item \href{http://www.id-book.com/}{Interaction Design - Book}
+\end{itemize}
+\end{frame}
+
+\end{document}
